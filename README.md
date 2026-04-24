@@ -1,3 +1,5 @@
+🇫🇷 Version française : [Lire ici](README.fr.md)
+
 # 🔐 Data Processing & Automation Tool
 
 ## 🎯 Business Context
