@@ -1,41 +1,121 @@
-# Scraping de books.toscrape.com
+# 🔐 Data Processing & Automation Tool
 
-Ce projet contient des scripts Python permettant de scraper le site [Books to Scrape](https://books.toscrape.com/), d’extraire les informations produit de tous les livres, de télécharger leurs images et d’enregistrer les données dans des fichiers CSV.  
+## 🎯 Business Context
 
----
+In many organizations, large volumes of data must be processed, verified, and structured on a regular basis.
 
-## Fonctionnalités
+Manual handling of such data can lead to:
 
-1. **Scraping par catégorie**
-   - Extraction de toutes les catégories disponibles sur le site.
-   - Parcours de **toutes les pages** pour chaque catégorie.
-   - Extraction des informations suivantes pour chaque livre :
-     - `product_page_url`
-     - `universal_product_code (upc)`
-     - `title`
-     - `price_including_tax`
-     - `price_excluding_tax`
-     - `number_available`
-     - `product_description`
-     - `category`
-     - `review_rating`
-     - `image_url`
-   - Les données sont enregistrées dans un **CSV séparé pour chaque catégorie** (`csv/<nom_categorie>.csv`).
+* human errors
+* inconsistencies
+* time-consuming processes
+* lack of traceability
 
-2. **Téléchargement des images**
-   - Chaque livre a son image téléchargée dans un dossier `images/<nom_categorie>/UPC.jpg`.
-   - Création automatique des dossiers par catégorie.
-   - Gestion des erreurs de téléchargement.
+This type of challenge is commonly found in **cybersecurity**, especially in:
 
-3. **Barre de progression**
-   - Une barre de progression (`tqdm`) permet de visualiser l’avancement du scraping pour chaque catégorie et livre.
+* vulnerability management
+* log analysis
+* compliance monitoring
+* data integrity verification
 
 ---
 
-## Installation
+## 🚀 Project Objective
 
-1. Cloner ce dépôt ou copier les scripts sur votre machine.
-2. Installer les dépendances Python nécessaires :
+This project aims to automate repetitive data processing tasks in order to:
+
+* improve data reliability
+* reduce manual errors
+* increase operational efficiency
+* standardize processing workflows
+
+---
+
+## 🧠 Functional Value
+
+This project demonstrates key capabilities relevant to a **functional consultant role in cybersecurity/data**:
+
+* **Process automation**: reducing repetitive manual tasks
+* **Data structuring**: organizing and transforming raw data
+* **Reliability improvement**: minimizing risks of human error
+* **Operational efficiency**: accelerating processing workflows
+* **Problem-solving**: translating a need into a functional solution
+
+---
+
+## 💻 Technical Skills
+
+* Python scripting
+* File processing and automation
+* Data manipulation
+* Logical structuring of workflows
+
+---
+
+## 🧭 Professional Positioning
+
+This project is part of my transition toward a role as a **Functional Consultant in Cybersecurity and Data**, focusing on:
+
+* automating data-driven processes
+* improving system reliability
+* supporting decision-making through structured data
+
+---
+
+## ⚙️ Technical Documentation
+
+### 📌 Description
+
+This Python script automates a repetitive task involving data processing and file manipulation.
+
+The program:
+
+* reads input data
+* processes and transforms it
+* outputs structured results
+
+---
+
+### 📦 Installation
 
 ```bash
-pip install requests beautifulsoup4 tqdm
+python -m venv .venv
+```
+
+Activate environment:
+
+```bash
+.venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### ▶️ Execution
+
+```bash
+python main.py
+```
+
+---
+
+## 🔍 Possible Improvements
+
+* Integration with real-time data sources (APIs)
+* Log analysis capabilities
+* Data validation and anomaly detection
+* Dashboard visualization
+* Integration with cybersecurity tools
+
+---
+
+## 👤 Author
+
+Project developed as part of a Python training program.
+
+Currently transitioning toward a role in **Cybersecurity (Governance, Risk & Compliance)** with a focus on data and functional consulting.
